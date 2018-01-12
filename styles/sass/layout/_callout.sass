@@ -9,7 +9,8 @@
 
     h1
       margin: 3em 0 1em 0
-
+      @media all and (max-width: 600px)
+        font-size: 1.75em
 
     .rule
       width: 7%
@@ -19,12 +20,16 @@
     p
       font-size: 1.5em
       margin: 2em 0 1em 0
+      @media all and (max-width: 600px)
+        font-size: 1.25em
 
     form
       width: 100%
 
       .input-container
         +flex(row, center, space-between)
+        @media all and (max-width: 1030px)
+          +flex(column, center, center)
         input, select
           outline: none
           border: 2px solid $GREY
@@ -34,18 +39,27 @@
           color: $GREY
         input[type=text], select
           font-size: 1.1em
+          @media all and (max-width: 600px)
+            font-size: 1em
         input
           width: 62.5%
+          @media all and (max-width: 1030px)
+            width: 100%
         .custom-select
           width: 35%
           position: relative
           display: inline-block
+          @media all and (max-width: 1030px)
+            width: 100%
+            margin-top: 1em
           select
             background:
               image: url('./../assets/img/cheveron-down.svg')
               repeat: no-repeat
               position: center right 10px
               size: 15%
+            @media all and (max-width: 1030px)
+              background-size: 8%
             display: inline-block
             appearance: none
             overflow: hidden
@@ -63,8 +77,12 @@
         font:
           weight: 700
           size: .95em
+        @media all and (max-width: 600px)
+          margin-bottom: 1em
 
   .unsubscribe
+    position: absolute
+    bottom: 0
     margin: 2.5em 0
     text-align: center
     font-size: 1em

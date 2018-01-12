@@ -6,6 +6,12 @@
 .wrapper {
   width: 100%;
   max-width: 45%; }
+  @media all and (max-width: 830px) {
+    .wrapper {
+      max-width: 60%; } }
+  @media all and (max-width: 500px) {
+    .wrapper {
+      max-width: 85%; } }
 
 /* BEGIN BASE STYLES -- BASE-DIR.SASS */
 /* COMMON STYLES - COMMON.SASS */
@@ -85,6 +91,9 @@ button {
         align-self: flex-start; }
     #newsletter-callout #main-content h1 {
       margin: 3em 0 1em 0; }
+      @media all and (max-width: 600px) {
+        #newsletter-callout #main-content h1 {
+          font-size: 1.75em; } }
     #newsletter-callout #main-content .rule {
       width: 7%;
       height: 5px;
@@ -92,6 +101,9 @@ button {
     #newsletter-callout #main-content p {
       font-size: 1.5em;
       margin: 2em 0 1em 0; }
+      @media all and (max-width: 600px) {
+        #newsletter-callout #main-content p {
+          font-size: 1.25em; } }
     #newsletter-callout #main-content form {
       width: 100%; }
       #newsletter-callout #main-content form .input-container {
@@ -108,6 +120,21 @@ button {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
+        @media all and (max-width: 1030px) {
+          #newsletter-callout #main-content form .input-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
         #newsletter-callout #main-content form .input-container input, #newsletter-callout #main-content form .input-container select {
           outline: none;
           border: 2px solid #7B7B7B;
@@ -117,12 +144,22 @@ button {
           color: #7B7B7B; }
         #newsletter-callout #main-content form .input-container input[type=text], #newsletter-callout #main-content form .input-container select {
           font-size: 1.1em; }
+          @media all and (max-width: 600px) {
+            #newsletter-callout #main-content form .input-container input[type=text], #newsletter-callout #main-content form .input-container select {
+              font-size: 1em; } }
         #newsletter-callout #main-content form .input-container input {
           width: 62.5%; }
+          @media all and (max-width: 1030px) {
+            #newsletter-callout #main-content form .input-container input {
+              width: 100%; } }
         #newsletter-callout #main-content form .input-container .custom-select {
           width: 35%;
           position: relative;
           display: inline-block; }
+          @media all and (max-width: 1030px) {
+            #newsletter-callout #main-content form .input-container .custom-select {
+              width: 100%;
+              margin-top: 1em; } }
           #newsletter-callout #main-content form .input-container .custom-select select {
             background-image: url("./../assets/img/cheveron-down.svg");
             background-repeat: no-repeat;
@@ -135,6 +172,9 @@ button {
             overflow: hidden;
             outline: none;
             width: 100%; }
+            @media all and (max-width: 1030px) {
+              #newsletter-callout #main-content form .input-container .custom-select select {
+                background-size: 8%; } }
             #newsletter-callout #main-content form .input-container .custom-select select:hover {
               cursor: pointer; }
         #newsletter-callout #main-content form .input-container .custom-select:after {
@@ -145,7 +185,12 @@ button {
         color: #C23628;
         font-weight: 700;
         font-size: .95em; }
+        @media all and (max-width: 600px) {
+          #newsletter-callout #main-content form .warning {
+            margin-bottom: 1em; } }
   #newsletter-callout .unsubscribe {
+    position: absolute;
+    bottom: 0;
     margin: 2.5em 0;
     text-align: center;
     font-size: 1em; }
