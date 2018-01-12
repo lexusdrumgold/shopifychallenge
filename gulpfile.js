@@ -33,7 +33,7 @@ gulp.task('compress', function() {
     .pipe(babel({presets: ['env']}))
     .pipe(uglify())
     .pipe(concat('main.min.js'))
-    .pipe(gulp.dest('./public/js/'))
+    .pipe(gulp.dest('./js/'))
     .pipe(browserSync.reload({stream:true}));
 });
 
