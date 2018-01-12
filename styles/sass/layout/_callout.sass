@@ -1,0 +1,70 @@
+/* NEWSLETTER CALLOUT STYLES - NEWSLETTER.SASS */
+#newsletter-callout
+  +flex(column, center, space-between)
+  height: 100vh
+
+  #main-content
+    color: $WHITE
+    align-self: flex-start
+
+    h1
+      margin: 3em 0 1em 0
+
+
+    .rule
+      width: 7%
+      height: 5px
+      background-color: $GREEN
+
+    p
+      font-size: 1.5em
+      margin: 2em 0 1em 0
+
+    form
+      width: 100%
+
+      .input-container
+        +flex(row, center, space-between)
+        input, select
+          outline: none
+          border: 2px solid $GREY
+          border-radius: .5em
+          line-height: 3.5
+          padding: 0 1.15em
+          color: $GREY
+        input[type=text], select
+          font-size: 1.1em
+        input
+          width: 62.5%
+        .custom-select
+          width: 35%
+          position: relative
+          display: inline-block
+          select
+            background:
+              image: url('./../assets/img/cheveron-down.svg')
+              repeat: no-repeat
+              position: center right 10px
+              size: 15%
+            display: inline-block
+            appearance: none
+            overflow: hidden
+            outline: none
+            width: 100%
+            &:hover
+              cursor: pointer
+        .custom-select:after
+          pointer-events: none
+
+      .warning
+        opacity: 0
+        margin: .75em 0 1.5em 0
+        color: $RED
+        font:
+          weight: 700
+          size: .95em
+
+  .unsubscribe
+    margin: 2.5em 0
+    text-align: center
+    font-size: 1em

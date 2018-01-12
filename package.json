@@ -1,0 +1,27 @@
+{
+  "name": "ShopifyFrontEndDevChallenge",
+  "version": "0.1.0",
+  "babel": {
+    "presets": ["env"]
+  },
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.23.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+// mixins
+=flex($flexDir, $align, $justify)
+  display: flex
+  flex-direction: $flexDir
+  align-items: $align
+  justify-content: $justify
+  @content
+
+=setBkgImg($url, $pos, $size)
+  background:
+    image: url("#{$url}")
+    size: $size
+    repeat: no-repeat
+    position: $pos
+  @content
+
+=transition($type, $duration, $timing, $delay)
+  transition: $type $duration $timing $delay
